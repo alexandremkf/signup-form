@@ -10,3 +10,9 @@ h1 {
 p {
   color: #333;
 }
+
+.logo {
+  font-family: 'Cinzel', serif;
+  font-size: 3rem;
+  color: white;
+}
