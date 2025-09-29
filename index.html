@@ -59,4 +59,25 @@
         </div>
     </div>
     </body>
+    <script>
+    const form = document.querySelector('form');
+    const inputs = form.querySelectorAll('input');
+
+    form.addEventListener('submit', (e) => {
+    let formIsValid = true;
+
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+        input.classList.add('error');
+        formIsValid = false;
+        } else {
+        input.classList.remove('error');
+        }
+    });
+
+    if (!formIsValid) {
+        e.preventDefault(); // impede o envio se houver erro
+    }
+    });
+    </script>
 </html>
