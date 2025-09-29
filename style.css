@@ -124,3 +124,8 @@ form {
 .main a:hover {
   text-decoration: underline;
 }
+
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
